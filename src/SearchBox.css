@@ -1,0 +1,40 @@
+.SearchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Align input and button side by side */
+.SearchBox form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Automatically hide when empty */
+.error-message:empty {
+  display: none;
+}
+
+/* Fade animation for smooth visibility */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
